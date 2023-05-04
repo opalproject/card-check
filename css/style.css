@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+.container{
+    min-width: 1440px;
+    min-height: 1024px;
+    width: 100%;
+    height: 100%;
+    margin: auto auto;
+}
+
+.payment-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background: linear-gradient(180deg, #7C7EF1 0%, #59BEF0 100%);
+    border-radius: 12px;
+}
+
+.item-description{
+    z-index: 1;
+    width: 449px;
+    height: 850px;
+    margin: 87px 0 87px 87px;
+    
+
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+   
+    align-items: center;
+
+    background: linear-gradient(299.25deg, #FBFBFB 5%, #59BEF0 129.41%);
+    box-shadow: inset 0px 4px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+
+
+.item-description__text{
+    
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.165em;
+    color: #FF0000;
+
+    margin-top: 51px;
+    margin-bottom: 12px;
+}
+
+.item-description__brand-image{
+    width: 197.27px;
+    height: 71px;
+}
+
+.item-description__name{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 84px;
+    text-transform: uppercase;
+    color: #208AC6;
+    margin-bottom: 22px;
+}
+
+.item_description__item-image{
+    width: 402px;
+    height: 498px;
+}
+
+.item_description__total-price{
+    margin-top: -38px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 84px;
+    text-transform: uppercase;
+    color: #208AC6;
+}
+
+.payment-details__style{
+    margin: 135px 89px 135px -48px;
+    width: 626px;
+    padding: 0 133px 32px 104px;
+
+    background: linear-gradient(299.25deg, rgba(251, 251, 251, 0.85) 5%, rgba(89, 190, 240, 0.85) 129.41%);
+box-shadow: inset 0px 4px 13px rgba(0, 0, 0, 0.25);
+border-radius: 12px;
+}
+
+.payment-details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 17px;
+}
+
+.payment-details__header-text{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    text-transform: capitalize;
+    color: #208AC6;
+    margin-bottom: 16px;
+}
+
+label p{
+    margin: 0;
+    margin-bottom: 8px;
+    margin-left: 17px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #208AC6;
+}
+
+label input{
+    box-sizing: border-box;
+    border: 0;
+    padding-left: 27px;
+    padding-right: 27px;
+    background: #E1F2FA;
+    border-bottom: 8px solid #000000;
+    border-radius: 12px;
+    width: 100%;
+    height: 90px;
+
+    margin-bottom: 16px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+
+.input-style-number{
+    padding-right: 104px;
+    background-image: url('../img/masterpass.png');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 24px);
+    background-position-y: 60%;
+}
+
+.input-style-date{
+    width: 349px;
+}
+
+.input-style-cvc{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    text-transform: capitalize;
+
+    color: #000000;
+
+    text-align: center;
+}
+
+.payment-details__button-pay{
+    border: 0;
+    background: #208AC6;
+    border-radius: 24px;
+    padding: 24px 72px;
+
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+
+    text-transform: capitalize;
+
+    color: #F6F9FB;
+}
+
+.payment-details__card-cvc-cvv{
+    font-weight: 600 !important;
+}
+
+.payment-details__input-inline-style{
+    display: flex;
+    flex-direction: row;
+    gap: 128px;
+}
+
+.payment-details__save-card span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #000000;
+    margin-left: 12px;
+}
+
+.payment-details__save-card input{
+    accent-color: #20C69E;
+    width: 24px;
+    height: 24px;
+    transform: translateY(5px);
+}
+
+@media (max-width: 431px) {
+    
+    .container{
+        min-width: 430px;
+        min-height: 914px;
+        width: 100%;
+        height: 100%;
+        margin: auto auto;
+    }
+
+    .item-description{
+        width: 430px;
+        height: 461px;
+        margin: 0;
+        border-radius: unset;
+    }
+    .payment-block{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 12px;
+    }
+    .item-description__name{
+        font-size: 47.6944px;
+        line-height: 72px;
+    }
+    .item-description__brand-image{
+        display: none;
+    }
+    .item_description__item-image{
+        width: 295px;
+        height: 282px;
+    }
+    .item_description__total-price{
+        margin-top: -70px;
+        margin-left: 140px;
+        font-weight: 700;
+        font-size: 30.2289px;
+        line-height: 45px;
+    }
+
+    .payment-details__style{
+        box-sizing:border-box;
+        background: none;
+        border-radius: 0;
+        box-shadow: none;
+        width: 100%;
+        margin: 0;
+        padding: 24px 30px 23px 29px;
+        background-color: white;
+    }
+    .payment-details__header-text{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .input-style-date{
+        width: 237.14px;
+    }
+    
+    .input-style-cvc{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 72px;
+        text-transform: capitalize;
+    
+        color: #000000;
+    
+        text-align: center;
+    }
+    .payment-details__input-inline-style{
+        display: flex;
+        flex-direction: row;
+        gap: 32.62px;
+    }
+
+    .payment-details__button-pay{
+        width: 100%;
+        border: 0;
+        background: #208AC6;
+        border-radius: 24px;
+        padding: 12px 104px;
+    
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+    
+        text-transform: capitalize;
+        color: #F6F9FB;
+    }
+
+    label p{
+        margin: 0;
+        margin-bottom: 2px;
+        margin-left: 8px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
