@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Card Check</title>
+</head>
+<body>
+    <div class="container">
+    <div class="payment-block">
+        
+        <div class="item-description">
+
+            <span class="item-description__text">You're buying</span>
+            <img src="img/nike_brand.png" alt="brand image" class="item-description__brand-image">
+            <span class="item-description__name">Dynamic Fit</span>
+            <img src="img/nike_item-image.png" alt="item image" class="item_description__item-image">
+            <span class="item_description__total-price">total $800</span>
+        </div>
+
+        <div class="payment-details__style">
+        <div class="payment-details">
+            <h1 class="payment-details__header-text">Your payment details</h1>
+
+            <label>
+                <p>NAME</p>
+                <input type="text" class="input-style-name">
+            </label>
+            
+            <label>
+                <p>CARD NUMBER</p>
+                <input type="number" class="input-style-number">
+            </label>
+            
+            <div class="payment-details__input-inline-style">  
+                <label>
+                    <p>EXPIRATION DATE</p>
+                    <input type="date" class="input-style-date">
+                </label>
+                
+                <label>
+                    <p class="payment-details__card-cvc-cvv">CVC / CVV</p>
+                    <input type="password" maxlength="3" inputmode="numeric" class="input-style-cvc">
+                </label>   
+               </div>
+           
+            <label class="payment-details__save-card">
+            <input type="checkbox" checked>
+            Save card info for future
+            </label>
+        </div>
+        <button class="payment-details__button-pay">PAY NOW</button>
+    </div>
+
+    </div>
+</div>
+</body>
+</html>
